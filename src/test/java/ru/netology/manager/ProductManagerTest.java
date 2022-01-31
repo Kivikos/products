@@ -81,14 +81,4 @@ public class ProductManagerTest {
         Product[] expected = new Product[]{book1, book2, book3, book4};
         assertArrayEquals(expected, results);
     }
-
-    @Test
-    public void shouldSearchByNull() {
-        Product[] results = productManager.searchBy("");
-        for (Product product : results) {
-        }
-        Product[] expected = new Product[]{book1, book2, book3, book4, smartphone1, smartphone2, smartphone3, smartphone4};
-        assertArrayEquals(expected, results);
-    }
-
 }
