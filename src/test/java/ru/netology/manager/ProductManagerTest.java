@@ -40,8 +40,6 @@ public class ProductManagerTest {
     @Test
     public void shouldSearchBySmartphoneName() {
         Product[] results = productManager.searchBy("smartphone");
-        for (Product product : results) {
-        }
         Product[] expected = new Product[]{smartphone1, smartphone2, smartphone3, smartphone4};
         assertArrayEquals(expected, results);
     }
@@ -63,8 +61,6 @@ public class ProductManagerTest {
     @Test
     public void shouldSearchByManufacturer() {
         Product[] results = productManager.searchBy("manufacturer");
-        for (Product product : results) {
-        }
         Product[] expected = new Product[]{smartphone1, smartphone2, smartphone3, smartphone4};
         assertArrayEquals(expected, results);
     }
@@ -72,8 +68,6 @@ public class ProductManagerTest {
     @Test
     public void shouldSearchByAuthorName() {
         Product[] results = productManager.searchBy("author");
-        for (Product product : results) {
-        }
         Product[] expected = new Product[]{book1, book2, book3, book4};
         assertArrayEquals(expected, results);
     }
